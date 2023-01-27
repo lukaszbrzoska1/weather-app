@@ -1,0 +1,72 @@
+.current-weather {
+  max-width: 120rem;
+  border-radius: 6px;
+  box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
+  color: #fff;
+  background-color: #333;
+  margin: 2rem auto 6rem auto;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weather-main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.weather-icon {
+  width: 8rem;
+  height: 8rem;
+}
+
+.weather-temperature {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.temperature {
+  grid-row: 1/-1;
+  font-size: 4.5rem;
+}
+
+.degrees {
+  display: inline-block;
+  margin: 0.5rem 1rem 0 1rem;
+  font-size: 2rem;
+}
+
+.weather-details {
+  font-size: 1rem;
+  color: #e9ecef;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: .4rem;
+}
+
+.weather-description {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.city {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+}
+
+.time {
+  margin: 0.5rem;
+  letter-spacing: .5px;
+}
+
+.description {
+  letter-spacing: .5px;
+}

@@ -1,0 +1,48 @@
+.daily-details-wrapper {
+  position: absolute ;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+}
+
+.daily-details:nth-child(even) {
+  background-color: #dee2e6;
+}
+
+.details-text {
+  margin: .5rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  letter-spacing: .1rem;
+}
+
+.details-value {
+  margin: .5rem;
+  font-weight: 700;
+}
+
+@keyframes inAnimation {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes outAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

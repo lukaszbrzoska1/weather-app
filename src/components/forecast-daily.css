@@ -1,0 +1,68 @@
+.daily-wrapper {
+  position: relative;
+}
+
+.daily-wrapper:nth-child(even) {
+  background-color: #e9ecef;
+}
+
+.daily-wrapper {
+  border-left: .1rem solid gray;
+}
+
+.daily-wrapper:last-child {
+  border-right: .1rem solid gray;
+}
+
+.daily-forecast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 20rem;
+}
+
+
+.daily-time{ 
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.daily-img {
+  width: 8rem;
+  height: 8rem;
+}
+
+.daily-desc {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.daily-temp {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@keyframes inAnimation {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes outAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
