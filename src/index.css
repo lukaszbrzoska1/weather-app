@@ -1,7 +1,16 @@
+:root {
+  box-sizing: inherit;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 html {
@@ -10,15 +19,20 @@ html {
 }
 
 body {
-  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
   font-family:'Roboto', Arial !important;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #ebebeb;;
-  
+  -moz-osx-font-smoothing: grayscale;  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.accordion__item:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+

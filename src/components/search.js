@@ -41,6 +41,13 @@ const Search = ({ onSearchChange }) => {
       value={search}
       onChange={handleOnChange}
       loadOptions={loadOptions}
+      styles={{
+        control: (baseStyles) => ({
+          ...baseStyles,
+          fontSize: '1.5rem',
+          letterSpacing: '.1rem',
+        })
+      }}
     />
   )
 }

@@ -19,15 +19,6 @@ const ForecastDaily = ({ data }) => {
     setToggle(prev => !prev);
   };
 
-  const checkValue = (temp) => {
-    const value = Math.round(temp);
-    if (value > 0) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
   return (
     <div
       className='daily-wrapper'
@@ -41,8 +32,8 @@ const ForecastDaily = ({ data }) => {
           className="daily-img" />
         <p className='daily-desc'>{weather[0].description}</p>
         <div className="daily-temp">
-          <p style={{ color: checkValue(main.temp_max) ? 'red' : 'blue' }} className="temp-max">{Math.round(main.temp_max)}&deg;</p>
-          <p style={{ color: checkValue(main.temp_min) ? 'red' : 'blue' }} className="temp-min">{Math.round(main.temp_min)}&deg;</p>
+          <p className="temp-max">{Math.round(main.temp_max)}&deg;</p>
+          <p className="temp-min">{Math.round(main.temp_min)}&deg;</p>
         </div>
       </div>
       {toggle && <ForecastDailyDetails

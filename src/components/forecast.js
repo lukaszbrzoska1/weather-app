@@ -30,7 +30,7 @@ const Forecast = ({ data }) => {
 
 
   return (
-    <>
+    <div className='forecast'>
       <h1 className="title">5-days forecast</h1>
       <Accordion allowZeroExpanded>
         {Object.keys(dataGroupedByDate).map((forecastDate) => {
@@ -45,7 +45,7 @@ const Forecast = ({ data }) => {
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel >
-                <div className='forecast '>
+                <div className='forecast-daily'>
                   {dataGroupedByDate[forecastDate].map((data, id) => {
                     return (
                       <Fragment key={id}>
@@ -60,7 +60,7 @@ const Forecast = ({ data }) => {
           )
         })}
       </Accordion>
-    </>
+    </div>
   )
 }
 

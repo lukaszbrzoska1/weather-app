@@ -10,10 +10,6 @@
   width: 100%;
 }
 
-.daily-details:nth-child(even) {
-  background-color: #dee2e6;
-}
-
 .details-text {
   margin: .5rem;
   text-transform: capitalize;

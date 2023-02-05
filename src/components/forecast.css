@@ -1,19 +1,27 @@
+.forecast {
+  padding: 1rem 2rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, .25);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25);
+  background-color: rgba(255, 255, 255, .3);
+  backdrop-filter: blur(15px);
+}
+
 .title {
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: .3rem;
   text-align: start;
-  margin: 1rem;
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 .daily-item {
-  background-color: #f5f5f5;
   padding: 1rem;
 }
 
 .item-date-name {
-  font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: .2rem;
   line-height: 1.2;
   font-weight: bold;
@@ -21,9 +29,10 @@
 }
 .item-date {
   text-align: center;
+  font-size: 1.2rem;
 }
 
-.forecast {
+.forecast-daily {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   margin: 2rem 0;
